@@ -14,6 +14,7 @@ html {
 }
 body {
   margin: 0;
+  background-image: url(../images/orange.jpg);
 }
 article,
 aside,
@@ -4079,7 +4080,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   }
 }
 .navbar-default {
-  background-color: #dd4814;
+  background-color:   ;
   border-color: #bf3e11;
 }
 .navbar-default .navbar-brand {

@@ -12,26 +12,21 @@
 
 <body>
 
-   <div class="navbar navbar-default">
+   <div class="navbar navbar-inverse">
     <div class="container">
   <div class="navbar-header">
-    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-inverse-collapse">
       <span class="icon-bar"></span>
       <span class="icon-bar"></span>
       <span class="icon-bar"></span>
     </button>
-    <a class="navbar-brand" href="#">FaceBook Post Planner</a>
+    <a class="navbar-brand" href="#">Facebook Post Planner</a>
   </div>
-  <div class="navbar-collapse collapse navbar-responsive-collapse">
+  <div class="navbar-collapse collapse navbar-inverse-collapse">
     <ul class="nav navbar-nav">
-      <li><a href="#">About</a></li>
-      <li><a href="#">Contact</a></li>
-      <li class="dropdown">
-        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Another Menu<b class="caret"></b></a>
-        <ul class="dropdown-menu">
-          <li><a href="#">1st menu</a></li>
-          <li><a href="#">2nd menu</a></li>
-          <li><a href="#">3rd menu</a></li>
+      <li><a href="#">HOME</a></li>
+      <li><a href="#">LIST</a></li>
+          <li class="divider"></li>
         </ul>
       </li>
     </ul>
@@ -44,9 +39,10 @@
    <div class="container">
         <div class='row'>
 
-            <form role="form" id="postmessage">
+            <form role="form" id="postmessage" action="/" method="post">
               <div class="form-group" style="margin-top: 70px;">
-                <textarea class="form-control" id="message" required placeholder="Message goes here!.." style="resize:none; height: 100px;"></textarea>
+                <label for="statusUpdate">Update Status: </label>
+                <textarea class="form-control" id="message" required placeholder="What's on your mind?" style="resize:none; height: 100px;" name="status"></textarea>
               </div>
               <button type="submit" class="btn btn-default btn-facebook" style="margin-right: 50px;">Post</button>
 
