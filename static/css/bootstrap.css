@@ -1394,7 +1394,7 @@ pre code {
 }
 @media (min-width: 768px) {
   .container {
-    width: 750px;
+    width: 650px;
   }
 }
 @media (min-width: 992px) {
@@ -1404,7 +1404,7 @@ pre code {
 }
 @media (min-width: 1200px) {
   .container {
-    width: 1170px;
+    width:870px;
   }
 }
 .container-fluid {
