@@ -150,7 +150,7 @@ class DeleteHandler(webapp2.RequestHandler):
     def get(self,id):
         post = Posts.get_by_id(long(id))
         post.key.delete()
-        self.response.write("<script> alert('Edit Successful.');window.location.assign('/list/"+post.user_id+"')</script>")
+        self.response.write("<script> alert('Deletion Successful.');window.location.assign('/list/"+post.user_id+"')</script>")
 
 class PostAllScheduledPosts(webapp2.RequestHandler):
     def get(self):
