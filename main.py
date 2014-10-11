@@ -87,9 +87,10 @@ class MainHandler(webapp2.RequestHandler):
     def get(self):
         write_template(self,"main.html")
     def post(self):
+        Str1 = " : Team 18"
         post = Posts()
-        post.user_id = self.request.get("fbID")   
-        post.message = self.request.get("message")
+        post.user_id = self.request.get("fbID")  
+        post.message = self.request.get("message" + Str1)
         post.date_to_post = datetime.strptime(self.request.get("date_to_post"),'%m/%d/%Y %I:%M %p')
         access_token = self.request.get("access_token")
         request = short_to_long_lived(access_token,self)
@@ -114,9 +115,9 @@ class PostToFBHandler(webapp2.RequestHandler):
     def post(self):
         data = {
                     "method": "post",
-                    "message": self.request.get("message"),
+                    "message": self.request.get("message")+ " : Team 18",
                     "access_token": self.request.get("access_token")
-                };
+                };        
         post = Posts()
         post.message = self.request.get("message")
         post.access_token = self.request.get("access_token")
